@@ -5,9 +5,18 @@
   "time": "2 minutes",
   "details": {
     "steps": [{
-      "title": "Step 1 - Run Command",
+      "title": "Step 1 - Start the server and the shell",
       "text": "step1.md"
-    }],
+    },
+    {
+      "title": "Step 2 - Register applications",
+      "text": "step2.md"
+    },
+    {
+      "title": "Step 3 - Create a stream",
+      "text": "step3.md"
+    }
+    ],
     "intro": {
       "text": "intro.md",
       "code": "env-init.sh",
@@ -19,6 +28,7 @@
   },
   "environment": {
     "showdashboard" : "true",
+    "dashboards": [{"name": "Tab Name", "port": 9393}, {"name": "Tab Name", "port": 8080}],
     "uilayout": "terminal",
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal."
   },
