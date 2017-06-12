@@ -1,6 +1,6 @@
-Do we have any streams registered? Let's run a command:s
+Do we have any streams registered? Let's run a command:
 
-````stream list```{{execute}}
+```stream list```{{execute}}
 
 Now create the stream:
 
@@ -12,4 +12,4 @@ Now deploy the stream
 
 Open a new terminal and visualize the data:
 
-```tail --retry -f /tmp/ticktock/data```{{execute}}
+```tail --retry -F /tmp/ticktock/data```{{execute}}
