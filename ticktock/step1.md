@@ -16,8 +16,13 @@ Now register the file sink:
 
 Now create the stream:
 
-```stream create --name ticktock --definition "time | file"```{{execute HOST2}}
+```stream create --name ticktock --definition "time | file --directory=/tmp/ticktock --name=data
+"```{{execute HOST2}}
 
 Now deploy the stream
 
 ```stream deploy ticktock --properties "deployer.time.memory=128m,deployer.file.memory=128m" ```{{execute HOST2}}
+
+Now visualize the data
+
+```tail -f /tmp/ticktock/data```{{execute HOST3}}
