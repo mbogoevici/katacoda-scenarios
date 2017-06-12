@@ -29,7 +29,7 @@
   "environment": {
     "showdashboard" : "true",
     "dashboards": [{"name": "Data Flow Dashboard", "port": 9393,
-      "link": "/dashboard", "url":"/dashboard", "path" : "/dashboard"},
+      "link": "/dashboard", "url":"/dashboard", "path" : "/dashboard"}],
     "uilayout": "terminal",
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal."
   },
