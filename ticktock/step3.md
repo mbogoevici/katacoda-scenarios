@@ -12,4 +12,4 @@ Now deploy the stream
 
 Open a new terminal and visualize the data:
 
-```tail --retry -F /tmp/ticktock/data```{{execute}}
+```tail --retry --follow=name -f /tmp/ticktock/data```{{execute}}
